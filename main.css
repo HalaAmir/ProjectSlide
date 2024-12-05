@@ -1,0 +1,52 @@
+body{
+
+    font-family: 'segoe ui light';
+}
+
+.items{
+    cursor: pointer;
+}
+.items-caption{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+@media screen and (min-width:750px) and (max-width:1000px){
+
+    .items-caption{
+        height:75%;
+     font-size: small;
+    }
+}
+
+#itembox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+   
+}
+.itembox{
+    width: 50%;
+    height: 450px;
+    background-image: url(images/portfolio-1.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.itembox i{
+ font-size: 18px;
+ margin: 5px;
+ cursor: pointer;
+}
